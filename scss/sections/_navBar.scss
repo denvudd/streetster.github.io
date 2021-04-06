@@ -1,0 +1,96 @@
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 48px;
+}
+
+.header-search__inner {
+  max-width: 400px;
+  width: 100%;
+}
+
+.search__bar {
+  background: #FFFFFF;
+  border-radius: 15.5px;
+  border: 0;
+  outline: none;
+  width: 100%;
+  height: 30px;
+  position: relative;
+  padding-left: 40px;
+}
+
+.search-bar__form {
+  position: relative;
+  .header-submit {
+    float: left;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: absolute;
+    left: 3px;
+    top: 4px;
+    cursor: pointer;
+    img {
+      display: inline-block;
+    }
+  }
+}
+
+.header__buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-burger {
+  display: block;
+  z-index: 5;
+  position: relative;
+  width: 32px;
+  height: 25px;
+  cursor: pointer;
+  margin-left: 35px;
+
+  &::before,
+  &::after,
+  span {
+    left: 0;
+    position: absolute;
+    height: 13%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background: #FFFFFF;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+}
+
+.menu-body {
+  display: none;
+}
