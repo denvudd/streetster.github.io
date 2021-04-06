@@ -1,0 +1,17 @@
+html {
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #F2F2FF;
+  line-height: 1.6;
+  font-weight: bold;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/*# sourceMappingURL=style.css.map */
