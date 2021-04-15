@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streetster Nathan - Streetster</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/lightbox.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/slider.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="index.html">
+            <source srcset="img/logo1-black.png">
+            <img src="img/logo1-black.webp" alt="">
+          </a>
+        </div>
+        <div class="header-search__inner">
+          <form class="search-bar__form" action="">
+            <input type="text" class="search__bar search__bar__gray">
+            <button class="header-submit" type="submit"><img src="img/svg/header/search.svg" alt=""></button>
+          </form>
+        </div>
+        <div class="header__buttons">
+          <div class="header-cart">
+            <object class="cart-desktop" data="img/svg/header/cart-navActive.svg" type=""></object>
+          </div>
+          <div class="header-burger header-burger__black">
+            <span></span>
+          </div>
+        </div>
+        <nav class="menu-body menu-body__gray">
+          <a href="#"><object class="cart-mobile" data="img/svg/header/cart-navActive.svg" type=""></object></a>
+          <ul class="menu__list">
+            <li><a class="menu__link" href="#">ROAD SERIES</a></li>
+            <li><a class="menu__link" href="#">STREET SERIES</a></li>
+            <li><a class="menu__link" href="#">MOUNTAIN SERIES</a></li>
+          </ul>
+          <ul class="menu__sublist">
+            <li><a class="menu__sublink" href="news.html">Новости</a></li>
+            <li><a class="menu__sublink" href="#">О нас</a></li>
+            <li><a class="menu__sublink" href="#">Контакты</a></li>
+          </ul>
+          <div class="menu__social">
+            <a href="#" class="menu__social__item">
+              <img src="img/svg/header/inst.svg" alt="">
+            </a>
+            <a href="#" class="menu__social__item">
+              <img src="img/svg/header/facebook.svg" alt="">
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="orderProduct">
+      <div class="container">
+        <div class="section__header orderProduct__header">
+          <div class="section__title orderProduct__title">
+            <h2>Оформление заказа</h2>
+          </div>
+        </div>
+        <div class="orderProduct__inner">
+          <div class="orderProduct__cart">
+            <div class="orderProduct__cart__title">
+              <p>В корзине <span id="cartProductNum">2</span> товара</p>
+            </div>
+            <div class="orderProduct__cart__products">
+              <div class="orderProduct__cart__item">
+                <div class="orderProduct__cart__item__info">
+                  <div class="orderProduct__cart__item__photo">
+                    <img src="img/orderPage/cartProduct1.png" alt="">
+                  </div>
+                  <div class="orderProduct__cart__item__text">
+                    <div class="orderProduct__cart__item__name">
+                      <p>STREETSTER NATHAN</p>
+                    </div>
+                    <div class="orderProduct__cart__item__selected">
+                      <p><span class="orderProduct__selectedColor">Цвет: черный</span>, <span
+                          class="orderProduct__selectedFrame">Рама: 54"</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="orderProduct__cart__item__calc">
+                  <span id="counter-plus" class="orderProduct__calc__minus">-</span>
+                  <input class="orderProduct__calc__input" type="text" value="1">
+                  <span id="counter-minus" class="orderProduct__calc__plus">+</span>
+                </div>
+                <div class="orderProduct__cart__item__price">
+                  <span>12000 ₴</span>
+                </div>
+              </div>
+              <div class="orderProduct__cart__item">
+                <div class="orderProduct__cart__item__info">
+                  <div class="orderProduct__cart__item__photo">
+                    <img src="img/orderPage/cartProduct2.png" alt="">
+                  </div>
+                  <div class="orderProduct__cart__item__text">
+                    <div class="orderProduct__cart__item__name">
+                      <p>ШЛЕМ OCTANE</p>
+                    </div>
+                    <div class="orderProduct__cart__item__selected">
+                      <p><span class="orderProduct__selectedColor">Цвет: черный</span>, <span
+                          class="orderProduct__selectedFrame">Рама: 54"</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="orderProduct__cart__item__calc">
+                  <span id="counter-plus" class="orderProduct__calc__minus">-</span>
+                  <input class="orderProduct__calc__input" type="text" value="1">
+                  <span id="counter-minus" class="orderProduct__calc__plus">+</span>
+                </div>
+                <div class="orderProduct__cart__item__price">
+                  <span>6000 ₴</span>
+                </div>
+              </div>
+            </div>
+            <div class="orderProduct__cart__total">
+              <div class="orderProduct__cart__total__delivery">
+                <p>Доставка: <span class="orderProduct-typeDelivery">бесплатно</span></p>
+              </div>
+              <div class="orderProduct__cart__total__price">
+                <p>Итого: <span class="orderProduct-card__totalPrice">18000 ₴</span></p>
+              </div>
+            </div>
+            <div class="orderProduct__cart__buttons">
+              <a href="#" class="buttonMore orderProduct__cart__button">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+              <a href="#" class="buttonMore orderProduct__cart__button">ОФОРМИТЬ ЗАКАЗ</a>
+            </div>
+          </div>
+          <div class="orderProduct__contacts">
+            <form action="#" class="orderProduct__contacts__form">
+              <div class="orderProduct__contacts__form__title">
+                <p>Контактная информация</p>
+              </div>
+              <div class="orderProduct__contacts__form__inner">
+                <div class="orderProduct__contacts__form__input">
+                  <label class="orderProduct__input__title" for="orderProduct__input">Имя</label>
+                  <input type="text" name="orderProduct__input">
+                </div>
+                <div class="orderProduct__contacts__form__input">
+                  <label class="orderProduct__input__title" for="orderProduct__input">Фамилия</label>
+                  <input type="text" name="orderProduct__input">
+                </div>
+                <div class="orderProduct__contacts__form__input">
+                  <label class="orderProduct__input__title" for="orderProduct__input">Номер телефона</label>
+                  <input type="tel" name="orderProduct__input">
+                </div>
+                <div class="orderProduct__contacts__form__input">
+                  <label class="orderProduct__input__title" for="orderProduct__input">E-mail</label>
+                  <input type="email" name="orderProduct__input">
+                </div>
+              </div>
+              <div class="orderProduct__contacts__form__title">
+                <p>Оплата и доставка</p>
+              </div>
+              <div class="orderProduct__contacts__form__inner">
+                <div class="orderProduct__contacts__form__input">
+                  <label class="orderProduct__input__title" for="orderProduct__input">Способ оплаты</label>
+                  <select name="" id="">
+                    <option value="privat">Приват Банк</option>
+                    <option value="oshad">Ощад Банк</option>
+                    <option value="mono">МоноБанк</option>
+                    <option value="ukr">УкрБанк</option>
+                  </select>
+                </div>
+                <div class="orderProduct__contacts__form__input">
+                  <label class="orderProduct__input__title" for="orderProduct__input">Споспоб получения</label>
+                  <select name="" id="">
+                    <option value="novaPoshta">Нова Пошта</option>
+                    <option value="fromstore">Самовывоз из магазинов</option>
+                    <option value="bycourier">Доставка курьером</option>
+                  </select>
+                </div>
+                <div class="orderProduct__contacts__form__input">
+                  <label class="orderProduct__input__title" for="orderProduct__input">Город</label>
+                  <input type="text" name="orderProduct__input">
+                </div>
+                <div class="orderProduct__contacts__form__input">
+                  <label class="orderProduct__input__title" for="orderProduct__input">Адрес доставки</label>
+                  <input type="text" name="orderProduct__input">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <img src="img/logo-footer.png" alt="">
+          </div>
+        </div>
+        <div class="footer__col">
+          <nav class="footer__navigation">
+            <div class="footer__navigation__col">
+              <h3 class="footer__navigation__title">Категории</h3>
+              <ul class="footer__navigation__list">
+                <li class="footer__navigation__li"><a class="footer__navigation__link" href="#">ROAD SERIES</a></li>
+                <li class="footer__navigation__li"><a class="footer__navigation__link" href="#">STREET SERIES</a></li>
+                <li class="footer__navigation__li"><a class="footer__navigation__link" href="#">MOUNTAIN SERIES</a></li>
+              </ul>
+            </div>
+            <div class="footer__navigation__col">
+              <h3 class="footer__navigation__title">Информация</h3>
+              <ul class="footer__navigation__list">
+                <li class="footer__navigation__li"><a class="footer__navigation__link" href="#">О нас</a></li>
+                <li class="footer__navigation__li"><a class="footer__navigation__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer__navigation__col">
+              <h3 class="footer__navigation__title">Категории</h3>
+              <ul class="footer__navigation__list">
+                <li class="footer__navigation__li"><a class="footer__navigation__link" href="#">ROAD SERIES</a></li>
+                <li class="footer__navigation__li"><a class="footer__navigation__link" href="#">STREET SERIES</a></li>
+                <li class="footer__navigation__li"><a class="footer__navigation__link" href="#">MOUNTAIN SERIES</a></li>
+              </ul>
+            </div>
+            <div class="footer__navigation__col">
+              <h3 class="footer__navigation__title">Информация</h3>
+              <ul class="footer__navigation__list">
+                <li class="footer__navigation__li"><a class="footer__navigation__link" href="#">О нас</a></li>
+                <li class="footer__navigation__li"><a class="footer__navigation__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <div class="footer__social">
+            <a href="#" class="footer__social__item">
+              <img src="img/svg/footer/inst.svg" alt="Instagram">
+            </a>
+            <a href="#" class="footer__social__item">
+              <img src="img/svg/footer/facebook.svg" alt="Instagram">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__watermark">
+        <p>© STREETSTER — Все права защищены </p>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="js/lazysizes.min.js"></script>
+<script src="js/navBar.js"></script>
+<script src="js/productPrice.js"></script>
+<script src="js/counterProduct.js"></script>
+
+</html>

@@ -1,0 +1,43 @@
+.orderProduct__contacts {
+  margin-left: 130px;
+}
+
+.orderProduct__contacts__form {
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+    padding-bottom: 20px;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  &__input {
+    max-width: 500px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    input {
+      border: 3px solid #000000;
+      padding: 7px 8px;
+    }
+    select {
+      border: 3px solid #000000;
+      padding: 10px 4px;
+    }
+  }
+}
+
+.orderProduct__input__title {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+  padding-bottom: 5px;
+}

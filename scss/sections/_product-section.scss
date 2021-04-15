@@ -1,0 +1,222 @@
+.product-section {
+  border-bottom: 1px solid #000000;
+}
+
+.product-section__inner {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  background: #F2F2F2;
+  width: 35%;
+  padding: 69px 70px 70px 70px;
+
+  &__name {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 46px;
+    color: #000000;
+    padding-bottom: 12px;
+    max-width: 250px;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+  }
+  &__description {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+  }
+
+  &__colors__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+    padding-bottom: 12px;
+  }
+}
+
+.product-colors {
+  display: flex;
+  flex-direction: row;
+}
+
+.check-icon {
+  display: inline-block;
+}
+
+.colors-radio {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 12px;
+}
+
+.colors-radio div {
+  display: inline-block;
+}
+
+.colors-radio input[type=radio] {
+  display: none;
+}
+
+.colors-radio input[type=radio]+label {
+
+}
+
+.colors-radio input[type=radio]+label span {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin: 0px 10px 0 0;
+  padding: 5px;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid #F2F2F2;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  line-height: 44px;
+}
+
+
+.colors-radio input[type=radio]#color-1+label span {
+  background: #000000;
+}
+
+.colors-radio input[type=radio]#color-2+label span {
+  background: #5A88FF;
+}
+
+.colors-radio input[type=radio]#color-3+label span {
+  background: #FF5A5A;
+}
+
+.colors-radio input[type=radio]#color-4+label span {
+  background: #FFFFFF;
+}
+
+.colors-radio input[type=radio]#color-5+label span {
+  background: #FAC154;
+}
+
+.colors-radio input[type=radio]:checked#color-1+label span {
+  border: 2px solid #DBDBDB;
+}
+
+.colors-radio input[type=radio]:checked+label span {
+  border: 2px solid #DBDBDB;
+}
+
+.product-info__button__inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 53px;
+}
+
+.product-info__button {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 14px 100px;
+  border: 3px solid #000000;
+  background: transparent;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+  transition: 0.3s ease;
+
+  &:hover {
+    background: #FFFFFF;
+  }
+}
+
+.product-slider__wrapper {
+  width: 65%;
+  padding: 168px 73px 64px 73px;
+}
+
+.product-slider {
+  width: 100%;
+  position: relative;
+  padding: 0px 40px;
+
+  &__item {
+    width: 100%;
+    text-align: center;
+
+    img {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 110;
+    font-size: 0;
+    width: 16px;
+    height: 33px;
+    border: 0;
+    outline: none;
+    margin: -16.5px 0px 0px 0px;
+    cursor: pointer;
+  }
+
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    max-width: 150px;
+    height: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 40px;
+    button {
+      font-size: 0;
+      width: 24px;
+      height: 5px;
+      background: #C4C4C4;
+      border: none;
+      outline: none;
+      margin-right: 12px;
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+  }
+}
+
+.product-slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url('../img/news/news-arrow-left.svg');
+}
+
+.product-slider .slick-arrow.slick-next {
+  right: 0;
+  background: url('../img/news/news-arrow-right.svg');
+}
+
+.product-slider .slick-dots li.slick-active button {
+  background: #000000;
+  width: 24px;
+  height: 5px;
+  transition: 0.3s ease;
+}

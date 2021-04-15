@@ -1,0 +1,41 @@
+.category-bike__main-screen {
+  background: url('../img/category-bike/main-screen-bg.jpg') no-repeat;
+  background-size: cover;
+  padding-top: 320px;
+  padding-bottom: 210px;
+}
+
+.main-screen__inner {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-screen__photo {
+  width: 100%;
+  margin-right: 30px;
+  img {
+    width: 100%;
+  }
+}
+
+.main-screen__text {
+  color: #FFFFFF;
+}
+
+.main-screen__title {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 60px;
+}
+
+.main-screen__description {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  p {
+    margin-block-end: 1em;
+    margin-block-start: 1em;
+  }
+}

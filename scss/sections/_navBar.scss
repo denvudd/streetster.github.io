@@ -28,6 +28,10 @@
   padding-left: 40px;
 }
 
+.search__bar.search__bar__gray {
+  background: #F2F2F2;
+}
+
 .search-bar__form {
   position: relative;
   .header-submit {
@@ -50,17 +54,19 @@
 .header__buttons {
   display: flex;
   flex-direction: row;
+  z-index: 1550;
+  width: 93px;
 }
+
+
 
 .header-burger {
   display: block;
-  z-index: 5;
   position: relative;
   width: 32px;
   height: 25px;
   cursor: pointer;
   margin-left: 35px;
-
   &::before,
   &::after,
   span {
@@ -91,6 +97,139 @@
   }
 }
 
+.header-burger__black {
+  &::before,
+  &::after,
+  span {
+    left: 0;
+    position: absolute;
+    height: 13%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background: #000000;
+  }
+}
+
+.header-burger._active {
+  &::before {
+    background: #000000;
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+  &::after {
+    background: #000000;
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
+  span {
+    transform: scale(0) translate(0px, -50%);
+    
+  }
+}
+
+.cart-mobile {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 63px;
+  left: 147px;
+}
+
+.header-cart {
+  opacity: 1;
+  transition: 1s ease;
+}
+
+.header-cart._passive {
+  opacity: 0;
+}
+
 .menu-body {
-  display: none;
+  z-index: 1500;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 25%;
+  height: 100%;
+  background: #FFFFFF;
+  padding-top: 140px;
+  padding-left: 72px;
+  padding-right: 72px;
+  transition: right 0.3s ease;
+  overflow: auto;
+  &::before {
+    content: '';
+    position: fixed;
+    width: 25%;
+    top: 0;
+    right: 0;
+    height: 113px;
+  }
+}
+
+.menu-body.menu-body__gray {
+  background: #D5D5D5;
+}
+
+.menu-body._active {
+  right: 0;
+}
+
+.menu__list {
+  padding-bottom: 40px !important;
+}
+
+.menu__list > li {
+  margin-bottom: 15px;
+}
+
+.menu__list > li:last-child {
+  margin-bottom: 0;
+}
+
+
+.menu__sublist > li {
+  margin-bottom: 15px;
+}
+
+.menu__sublist > li:last-child {
+  margin-bottom: 0;
+}
+
+.menu__link {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.menu__sublink {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  text-decoration: none;
+  color: #000000;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.menu__social {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding-top: 40px;
+}
+
+.menu__social__item {
+  margin-right: 10px;
+  img {
+    width: 23px;
+    height: 28px;
+  }
 }

@@ -19,7 +19,12 @@
     <div class="container">
       <div class="header__inner">
         <div class="header__logo">
-          <img src="img/logo1.png" alt="Streetster Logo">
+          <picture>
+            <a href="index.html">
+              <source srcset="img/logo1.png">
+              <img src="img/logo1.webp" alt="">
+            </a>
+          </picture>
         </div>
         <div class="header-search__inner">
           <form class="search-bar__form" action="">
@@ -29,21 +34,38 @@
         </div>
         <div class="header__buttons">
           <div class="header-cart">
-            <object data="img/svg/header/cart.svg" type=""></object>
+            <object class="cart-desktop" data="img/svg/header/cart.svg" type=""></object>
           </div>
           <div class="header-burger">
             <span></span>
           </div>
         </div>
         <nav class="menu-body">
+          <a href="#"><object class="cart-mobile" data="img/svg/header/cart-navActive.svg" type=""></object></a>
           <ul class="menu__list">
-            <li><a href=""></a></li>
+            <li><a class="menu__link" href="category-bike.html">ROAD SERIES</a></li>
+            <li><a class="menu__link" href="category-bike.html">STREET SERIES</a></li>
+            <li><a class="menu__link" href="category-bike.html">MOUNTAIN SERIES</a></li>
           </ul>
+          <ul class="menu__sublist">
+            <li><a class="menu__sublink" href="news.html">Новости</a></li>
+            <li><a class="menu__sublink" href="#">О нас</a></li>
+            <li><a class="menu__sublink" href="#">Контакты</a></li>
+          </ul>
+          <div class="menu__social">
+            <a href="#" class="menu__social__item">
+              <img src="img/svg/header/inst.svg" alt="">
+            </a>
+            <a href="#" class="menu__social__item">
+              <img src="img/svg/header/facebook.svg" alt="">
+            </a>
+          </div>
         </nav>
       </div>
     </div>
   </header>
   <main>
+    <!-- INTRO -->
     <section class="intro">
       <div class="container">
         <div class="intro__text">
@@ -59,12 +81,14 @@
             </div>
           </div>
           <div class="intro__button__inner">
-            <a href="#" class="buttonMore intro__button">УЗНАТЬ БОЛЬШЕ</a>
+            <a href="product-page.html" class="buttonMore intro__button">УЗНАТЬ БОЛЬШЕ</a>
           </div>
         </div>
       </div>
     </section>
+    <!-- GOODS SECTION -->
     <section class="goods">
+      <!-- CATEGORIES SECTION -->
       <section class="categories">
         <div class="container">
           <div class="section__header categories__header">
@@ -76,87 +100,555 @@
         <div class="categories-slider">
           <div class="categories-slider__item">
             <div class="categories-slider__item__bg">
-              <img src="img/category-slider/slide-img1.png" alt="">
+              <picture>
+                <source srcset="img/category-slider/slide-img1.png">
+                <img src="img/category-slider/slide-img1.webp" alt="">
+              </picture>
             </div>
             <div class="categories-slider__item__center">
               <div class="categories-slider__item__center-photo">
-                <img src="img/category-slider/slide-img-center1.png" alt="">
+                <picture>
+                  <source srcset="img/category-slider/slide-img-center1.png">
+                  <img src="img/category-slider/slide-img-center1.webp" alt="">
+                </picture>
               </div>
               <div class="categories-slider__item__text">
-                <p>ROAD SERIES</p>
+                <a href="category-bike.html">
+                  <p>OFFROAD SERIES</p>
+                </a>
               </div>
             </div>
           </div>
           <div class="categories-slider__item">
             <div class="categories-slider__item__bg">
-              <img src="img/category-slider/slide-img1.png" alt="">
+              <picture>
+                <source srcset="img/category-slider/slide-img1.png">
+                <img src="img/category-slider/slide-img1.webp" alt="">
+              </picture>
             </div>
             <div class="categories-slider__item__center">
               <div class="categories-slider__item__center-photo">
-                <img src="img/category-slider/slide-img-center1.png" alt="">
+                <picture>
+                  <source srcset="img/category-slider/slide-img-center1.png">
+                  <img src="img/category-slider/slide-img-center1.webp" alt="">
+                </picture>
               </div>
               <div class="categories-slider__item__text">
-                <p>ROAD SERIES</p>
+                <a href="category-bike.html">
+                  <p>ROAD SERIES</p>
+                </a>
               </div>
             </div>
           </div>
           <div class="categories-slider__item">
             <div class="categories-slider__item__bg">
-              <img src="img/category-slider/slide-img1.png" alt="">
+              <picture>
+                <source srcset="img/category-slider/slide-img1.png">
+                <img src="img/category-slider/slide-img1.webp" alt="">
+              </picture>
             </div>
             <div class="categories-slider__item__center">
               <div class="categories-slider__item__center-photo">
-                <img src="img/category-slider/slide-img-center1.png" alt="">
+                <picture>
+                  <source srcset="img/category-slider/slide-img-center1.png">
+                  <img src="img/category-slider/slide-img-center1.webp" alt="">
+                </picture>
               </div>
               <div class="categories-slider__item__text">
-                <p>ROAD SERIES</p>
+                <a href="category-bike.html">
+                  <p>STREET SERIES</p>
+                </a>
               </div>
             </div>
           </div>
           <div class="categories-slider__item">
             <div class="categories-slider__item__bg">
-              <img src="img/category-slider/slide-img1.png" alt="">
+              <picture>
+                <source srcset="img/category-slider/slide-img1.png">
+                <img src="img/category-slider/slide-img1.webp" alt="">
+              </picture>
             </div>
             <div class="categories-slider__item__center">
               <div class="categories-slider__item__center-photo">
-                <img src="img/category-slider/slide-img-center1.png" alt="">
+                <picture>
+                  <source srcset="img/category-slider/slide-img-center1.png">
+                  <img src="img/category-slider/slide-img-center1.webp" alt="">
+                </picture>
               </div>
               <div class="categories-slider__item__text">
-                <p>ROAD SERIES</p>
+                <a href="category-bike.html">
+                  <p>OFFROAD SERIES</p>
+                </a>
               </div>
             </div>
           </div>
           <div class="categories-slider__item">
             <div class="categories-slider__item__bg">
-              <img src="img/category-slider/slide-img1.png" alt="">
+              <picture>
+                <source srcset="img/category-slider/slide-img1.png">
+                <img src="img/category-slider/slide-img1.webp" alt="">
+              </picture>
             </div>
             <div class="categories-slider__item__center">
               <div class="categories-slider__item__center-photo">
-                <img src="img/category-slider/slide-img-center1.png" alt="">
+                <picture>
+                  <source srcset="img/category-slider/slide-img-center1.png">
+                  <img src="img/category-slider/slide-img-center1.webp" alt="">
+                </picture>
               </div>
               <div class="categories-slider__item__text">
-                <p>ROAD SERIES</p>
+                <a href="category-bike.html">
+                  <p>STREET SERIES</p>
+                </a>
               </div>
             </div>
           </div>
           <div class="categories-slider__item">
             <div class="categories-slider__item__bg">
-              <img src="img/category-slider/slide-img1.png" alt="">
+              <picture>
+                <source srcset="img/category-slider/slide-img1.png">
+                <img src="img/category-slider/slide-img1.webp" alt="">
+              </picture>
             </div>
             <div class="categories-slider__item__center">
               <div class="categories-slider__item__center-photo">
-                <img src="img/category-slider/slide-img-center1.png" alt="">
+                <picture>
+                  <source srcset="img/category-slider/slide-img-center1.png">
+                  <img src="img/category-slider/slide-img-center1.webp" alt="">
+                </picture>
               </div>
               <div class="categories-slider__item__text">
-                <p>ROAD SERIES</p>
+                <a href="category-bike.html">
+                  <p>OFFROAD SERIES</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SELECTED SECTION -->
+      <section class="selected">
+        <div class="container">
+          <div class="section__header selected__header">
+            <div class="section__title">
+              <h2>Избранные товары</h2>
+            </div>
+          </div>
+          <div class="selected-goods__wrapper">
+            <div class="selected-goods__inner">
+              <div class="selected-goods__main-screen">
+                <div class="selected-goods__main-screen__item">
+                  <div class="selected-goods__main-screen__item__photo">
+                    <img src="img/selected-goods/selected-slider-bg.png" alt="">
+                  </div>
+                  <div class="selected-goods__main-screen__item__text">
+                    <div class="selected-goods__main-screen__item__title">
+                      <a class="selected-goods__main-screen__item__link" href="product-page.html">
+                        <p>Streetster Bakerstreet</p>
+                      </a>
+                    </div>
+                    <div class="selected-goods__main-screen__item__subtitle">
+                      <p>скорость соедененная с удобством</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="selected-goods__main-screen__item">
+                  <div class="selected-goods__main-screen__item__photo">
+                    <picture>
+                      <source srcset="img/selected-goods/selected-slider-bg.png">
+                      <img src="img/selected-goods/selected-slider-bg.webp" alt="">
+                    </picture>
+                  </div>
+                  <div class="selected-goods__main-screen__item__text">
+                    <div class="selected-goods__main-screen__item__title">
+                      <a class="selected-goods__main-screen__item__link" href="product-page.html">
+                        <p>Street Series</p>
+                      </a>
+                    </div>
+                    <div class="selected-goods__main-screen__item__subtitle">
+                      <p>удобство перемещения и комфорт</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="selected-goods__main-screen__item">
+                  <div class="selected-goods__main-screen__item__photo">
+                    <picture>
+                      <source srcset="img/selected-goods/selected-slider-bg.png">
+                      <img src="img/selected-goods/selected-slider-bg.webp" alt="">
+                    </picture>
+                  </div>
+                  <div class="selected-goods__main-screen__item__text">
+                    <div class="selected-goods__main-screen__item__title">
+                      <a class="selected-goods__main-screen__item__link" href="product-page.html">
+                        <p>OFFROAD SERIES</p>
+                      </a>
+                    </div>
+                    <div class="selected-goods__main-screen__item__subtitle">
+                      <p>мягкость и комфорт</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="selected-categories">
+                <div class="selected-categories__item">
+                  <div class="selected-categories__item__img">
+                    <picture>
+                      <source srcset="img/selected-goods/selected-goods-category1.png">
+                      <img src="img/selected-goods/selected-goods-category1.webp" alt="">
+                    </picture>
+                  </div>
+                  <div class="selected-categories__item__name">
+                    <a class="selected-categories__item__link" href="product-page.html">
+                      <p>Шлем Octane</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="selected-categories__item">
+                  <div class="selected-categories__item__img">
+                    <picture>
+                      <source srcset="img/selected-goods/selected-goods-category2.png">
+                      <img src="img/selected-goods/selected-goods-category2.webp" alt="">
+                    </picture>
+                  </div>
+                  <div class="selected-categories__item__name">
+                    <a class="selected-categories__item__link" href="product-page.html">
+                      <p>Защита Canyon</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="selected-categories__item">
+                  <div class="selected-categories__item__img">
+                    <picture>
+                      <source srcset="img/selected-goods/selected-goods-category2.png">
+                      <img src="img/selected-goods/selected-goods-category2.webp" alt="">
+                    </picture>
+                  </div>
+                  <div class="selected-categories__item__name">
+                    <a class="selected-categories__item__link" href="product-page.html">
+                      <p>Защита Canyon</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="selected-categories__item">
+                  <div class="selected-categories__item__img">
+                    <picture>
+                      <source srcset="img/selected-goods/selected-goods-category1.png">
+                      <img src="img/selected-goods/selected-goods-category1.webp" alt="">
+                    </picture>
+                  </div>
+                  <div class="selected-categories__item__name">
+                    <a class="selected-categories__item__link" href="product-page.html">
+                      <p>Шлем Octane</p>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
     </section>
+    <section class="description-company">
+      <div class="container">
+        <div class="description-company__text">
+          <p><strong>STREETSTER</strong> – Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="container">
+        <div class="section__header features__header">
+          <div class="section__title features__title">
+            <h2>Велосипеды Streetster это...</h2>
+          </div>
+        </div>
+        <div class="features__blocks__wrapper">
+          <div class="features__blocks__inner">
+            <div class="features__block">
+              <div class="features__block__icon">
+                <picture>
+                  <source srcset="img/features/features-blocks/features-block1.png">
+                  <img src="img/features/features-blocks/features-block1.webp" alt="">
+                </picture>
+              </div>
+              <div class="features__block__text">
+                <div class="features__block__title">
+                  <h3>Простота обсуживания</h3>
+                </div>
+                <div class="features__block__description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+              </div>
+            </div>
+            <div class="features__block">
+              <div class="features__block__icon">
+                <picture>
+                  <source srcset="img/features/features-blocks/features-block2.png">
+                  <img src="img/features/features-blocks/features-block2.webp" alt="">
+                </picture>
+              </div>
+              <div class="features__block__text">
+                <div class="features__block__title">
+                  <h3>Надежная конструкция</h3>
+                </div>
+                <div class="features__block__description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+              </div>
+            </div>
+            <div class="features__block">
+              <div class="features__block__icon">
+                <picture>
+                  <source srcset="img/features/features-blocks/features-block3.png">
+                  <img src="img/features/features-blocks/features-block3.webp" alt="">
+                </picture>
+              </div>
+              <div class="features__block__text">
+                <div class="features__block__title">
+                  <h3>Качественные детали</h3>
+                </div>
+                <div class="features__block__description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="container">
+        <div class="section__header news__header">
+          <div class="section__title">
+            <h2>Новости</h2>
+          </div>
+        </div>
+        <div class="news__blocks__wrapper">
+          <div class="news__blocks__inner">
+            <div class="news__block">
+              <div class="news__block__image">
+                <picture>
+                  <source srcset="img/news/news-block-img1.jpg">
+                  <img src="img/news/news-block-img1.webp" alt="">
+                </picture>
+              </div>
+              <div class="news__block__text">
+                <div class="news__block__title">
+                  <h3>Лучшие аксессуары для стрит байков</h3>
+                </div>
+                <div class="news__block__description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua...</p>
+                </div>
+              </div>
+              <div class="news__block__button">
+                <a class="buttonMore news__button" href="#">ЧИТАТЬ</a>
+              </div>
+            </div>
+            <div class="news__block">
+              <div class="news__block__image">
+                <picture>
+                  <source srcset="img/news/news-block-img2.jpg">
+                  <img src="img/news/news-block-img2.webp" alt="">
+                </picture>
+              </div>
+              <div class="news__block__text">
+                <div class="news__block__title">
+                  <h3>Куда поехать в Киеве?</h3>
+                </div>
+                <div class="news__block__description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua...</p>
+                </div>
+              </div>
+              <div class="news__block__button">
+                <a class="buttonMore news__button" href="#">ЧИТАТЬ</a>
+              </div>
+            </div>
+            <div class="news__block">
+              <div class="news__block__image">
+                <picture>
+                  <source srcset="img/news/news-block-img3.jpg">
+                  <img src="img/news/news-block-img3.webp" alt="">
+                </picture>
+              </div>
+              <div class="news__block__text">
+                <div class="news__block__title">
+                  <h3>Как обслуживать свой велосипед?</h3>
+                </div>
+                <div class="news__block__description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua...</p>
+                </div>
+              </div>
+              <div class="news__block__button">
+                <a class="buttonMore news__button" href="#">ЧИТАТЬ</a>
+              </div>
+            </div>
+            <div class="news__block">
+              <div class="news__block__image">
+                <picture>
+                  <source srcset="img/news/news-block-img1.jpg">
+                  <img src="img/news/news-block-img1.webp" alt="">
+                </picture>
+              </div>
+              <div class="news__block__text">
+                <div class="news__block__title">
+                  <h3>Лучшие аксессуары для стрит байков</h3>
+                </div>
+                <div class="news__block__description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua...</p>
+                </div>
+              </div>
+              <div class="news__block__button">
+                <a class="buttonMore news__button" href="#">ЧИТАТЬ</a>
+              </div>
+            </div>
+            <div class="news__block">
+              <div class="news__block__image">
+                <picture>
+                  <source srcset="img/news/news-block-img2.jpg">
+                  <img src="img/news/news-block-img2.webp" alt="">
+                </picture>
+              </div>
+              <div class="news__block__text">
+                <div class="news__block__title">
+                  <h3>Куда поехать в Киеве?</h3>
+                </div>
+                <div class="news__block__description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua...</p>
+                </div>
+              </div>
+              <div class="news__block__button">
+                <a class="buttonMore news__button" href="#">ЧИТАТЬ</a>
+              </div>
+            </div>
+            <div class="news__block">
+              <div class="news__block__image">
+                <picture>
+                  <source srcset="img/news/news-block-img3.jpg">
+                  <img src="img/news/news-block-img3.webp" alt="">
+                </picture>
+              </div>
+              <div class="news__block__text">
+                <div class="news__block__title">
+                  <h3>Как обслуживать свой велосипед?</h3>
+                </div>
+                <div class="news__block__description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua...</p>
+                </div>
+              </div>
+              <div class="news__block__button">
+                <a class="buttonMore news__button" href="#">ЧИТАТЬ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mailing">
+      <div class="container">
+        <div class="section__header mailing__header">
+          <div class="section__title mailing__title">
+            <h2>Подпишитесь на новостную рассылку</h2>
+          </div>
+        </div>
+        <form action="" class="mailing__form">
+          <label class="mailing__label__email" for="">
+            <input type="email" class="mailing__email__input" id="mailing__email" name="email" placeholder="Email">
+          </label>
+          <label class="mailing__label__submit" for="">
+            <input class="buttonMore mailing__submit" type="submit">
+          </label>
+        </form>
+      </div>
+    </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <img src="img/logo-footer.png" alt="">
+          </div>
+        </div>
+        <div class="footer__col">
+          <nav class="footer__navigation">
+            <div class="footer__navigation__col">
+              <h3 class="footer__navigation__title">Категории</h3>
+              <ul class="footer__navigation__list">
+                <li class="footer__navigation__li"><a class="footer__navigation__link" href="#">ROAD SERIES</a></li>
+                <li class="footer__navigation__li"><a class="footer__navigation__link" href="#">STREET SERIES</a></li>
+                <li class="footer__navigation__li"><a class="footer__navigation__link" href="#">MOUNTAIN SERIES</a></li>
+              </ul>
+            </div>
+            <div class="footer__navigation__col">
+              <h3 class="footer__navigation__title">Информация</h3>
+              <ul class="footer__navigation__list">
+                <li class="footer__navigation__li"><a class="footer__navigation__link" href="#">О нас</a></li>
+                <li class="footer__navigation__li"><a class="footer__navigation__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer__navigation__col">
+              <h3 class="footer__navigation__title">Категории</h3>
+              <ul class="footer__navigation__list">
+                <li class="footer__navigation__li"><a class="footer__navigation__link" href="#">ROAD SERIES</a></li>
+                <li class="footer__navigation__li"><a class="footer__navigation__link" href="#">STREET SERIES</a></li>
+                <li class="footer__navigation__li"><a class="footer__navigation__link" href="#">MOUNTAIN SERIES</a></li>
+              </ul>
+            </div>
+            <div class="footer__navigation__col">
+              <h3 class="footer__navigation__title">Информация</h3>
+              <ul class="footer__navigation__list">
+                <li class="footer__navigation__li"><a class="footer__navigation__link" href="#">О нас</a></li>
+                <li class="footer__navigation__li"><a class="footer__navigation__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <div class="footer__social">
+            <a href="#" class="footer__social__item">
+              <img src="img/svg/footer/inst.svg" alt="Instagram">
+            </a>
+            <a href="#" class="footer__social__item">
+              <img src="img/svg/footer/facebook.svg" alt="Instagram">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__watermark">
+        <p>© STREETSTER — Все права защищены </p>
+      </div>
+    </div>
+  </footer>
 </body>
+<script src="js/lazysizes.min.js"></script>
+<script src="js/navBar.js"></script>
+<script src="js/productPrice.js"></script>
+<script src="js/counterProduct.js"></script>
 
 </html>

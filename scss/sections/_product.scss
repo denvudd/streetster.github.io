@@ -1,0 +1,255 @@
+.product {
+  background: url('../img/product-page/product-page__bg.png');
+  background-repeat: no-repeat;
+  background-size: 70% 100%;
+  padding-top: 180px;
+}
+
+.product__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.product-info.product-info__page {
+  background: transparent;
+}
+
+.product-slider__wrapper.product-slider__wrapper-page {
+  margin-right: 70px;
+}
+
+.product__price__page {
+  padding-bottom: 18px;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.product-info__colors__page {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.product-info__inches__page {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.product-info__inches__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+  padding-bottom: 10px;
+}
+
+.inches__name {
+  font-weight: 400;
+}
+
+.colors__name {
+  font-weight: 400;
+}
+
+.inches-radio {
+  display: flex;
+  flex-direction: row;
+}
+
+.sq-radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  user-select: none;
+  margin-right: 20px;
+  border: 3px solid #000000;
+  padding: 7px 9px 7px 9px;
+  min-width: 80px;
+
+  .option_name {
+    padding-left: 30px;
+  }
+}
+
+.sq-radio input {
+  position: absolute;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 23px;
+  height: 23px;
+  background-color: #FFFFFF;
+  border: 3px solid #000000;
+}
+
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.sq-radio input:checked~.checkmark:after {
+  display: block;
+}
+
+.sq-radio .checkmark:after {
+  top: 2px;
+  left: 2px;
+  width: 13px;
+  height: 13px;
+  background-color: #241d25;
+}
+
+.product-info__optional-product {
+  padding-top: 20px;
+}
+
+.product-info__optional-product__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.product-info__optional-product__inner {
+  display: flex;
+}
+
+.optional-product__item {
+  background: #F2F2F2;
+  padding: 10px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+  margin-right: 24px;
+  text-align: center;
+
+  &__photo {
+    margin-top: -50px;
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  &__name {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  &__price {
+    padding-bottom: 16px;
+  }
+
+  &__button {
+    margin-bottom: -20px;
+
+    span {
+      background: url('../img/svg/plus.svg');
+      padding: 4px 13px;
+      max-width: 23px;
+      max-height: 23px;
+      cursor: pointer;
+
+    }
+
+    .optional__remove {
+      background: url('../img/svg/minus.svg');
+    }
+  }
+}
+
+
+.product-info__confirm {
+  padding-top: 60px;
+}
+
+.product-info__total {
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+  }
+}
+
+.product-info__button__confirm {
+  padding-top: 20px;
+  display: flex;
+  width: 100%;
+}
+
+.product-info__button-page {
+  outline: none;
+
+  &:hover {
+    background: #000000;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+}
+
+
+
+.model__color-circle {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-right: 10px;
+  padding: 5px;
+  vertical-align: middle;
+  border-radius: 50%;
+  border: 5px solid #F2F2F2;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  line-height: 44px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+#model__color-circle-1 {
+  background: #000000;
+}
+
+#model__color-circle-2 {
+  background: #5A88FF;
+}
+
+#model__color-circle-3 {
+  background: #FF5A5A;
+}
+
+#model__color-circle-4 {
+  background: #FFFFFF;
+}
+
+#model__color-circle-5 {
+  background: #FAC154;
+}

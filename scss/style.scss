@@ -35,4 +35,60 @@ body {
 
 @import 'sections/goods';
 
+/* Секция Description Company */
+
+@import 'sections/description-company';
+
+/* Секция Features */
+
+@import 'sections/features';
+
+/* Секция News */
+
+@import 'sections/news';
+
+/* Секция Mailing */
+
+@import 'sections/mailing';
+
+/* Стили подвала */
+
+@import 'sections/footer';
+
+/* Секция Category Bike Main Screen */
+
+@import 'sections/main-screen';
+
+/* Общая секция товара Product Section */
+
+@import 'sections/product-section';
+
+/* Секция товара Product */
+
+@import 'sections/product';
+
+/* Секция отзывов */
+
+@import 'sections/reviews';
+
+/* Секция "Другие товары" otherModels */
+
+@import 'sections/otherModels';
+
+/* Секция оформления товара Order Product */
+
+@import 'sections/orderPage';
+
+/* Секция "Контактная информация" Order Contacts*/
+
+@import 'sections/orderContacts';
+
+/* Секция страницы новостей */
+
+@import 'sections/news-page';
+
+/* Секция страницы блога  */
+
+@import 'sections/blog-page';
+
 

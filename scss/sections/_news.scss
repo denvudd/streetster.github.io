@@ -1,0 +1,119 @@
+.news {
+  margin-top: -300px;
+}
+
+.news__header {
+  text-align: center;
+}
+
+.news__blocks__wrapper {
+  padding-top: 63px;
+}
+
+.news__blocks__inner {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-left: 66px;
+  padding-right: 66px;
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 110;
+    font-size: 0;
+    width: 16px;
+    height: 33px;
+    border: 0;
+    outline: none;
+    margin: -16.5px 0px 0px 0px;
+    cursor: pointer;
+  }
+}
+
+.news__blocks__inner .slick-arrow.slick-prev {
+  left: 0;
+  background: url('../img/news/news-arrow-left.svg');
+}
+
+.news__blocks__inner .slick-arrow.slick-next {
+  right: 0;
+  background: url('../img/news/news-arrow-right.svg');
+}
+
+.news__block {
+  max-width: 390px;
+  margin-left: 42px;
+  &__image {
+    width: 100%;
+    object-fit: contain;
+
+    img {
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    color: #000000;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #F2F2F2;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    min-height: 62px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__description {
+    padding-top: 14px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #F2F2F2;
+  }
+  &__date {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+    padding-top: 5px;
+  }
+}
+
+.news__button {
+  width: 100%;
+  padding: 13px 112px;
+  text-align: center;
+  background: transparent;
+  border: 3px solid #000000;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+  text-decoration: none;
+  transition: 0.3s ease;
+  &:hover {
+    background: #000000;
+    color: #FFFFFF;
+  }
+}

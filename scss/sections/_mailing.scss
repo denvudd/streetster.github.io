@@ -1,0 +1,66 @@
+.mailing {
+  margin-top: 40px;
+  padding-top: 280px;
+  padding-bottom: 175px;
+  background: url('../img/mailing-bg.png') no-repeat;
+}
+
+.mailing__header {
+  padding-bottom: 20px;
+}
+
+.mailing__title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.mailing__label__email {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mailing__email__input {
+  background: #FFFFFF;
+  border: 3px solid #000000;
+  width: 50%;
+  padding: 10px 20px;
+  line-height: 23px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  &::placeholder {
+    line-height: 23px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    color: #B8B8B8;
+  }
+}
+
+.mailing__label__submit {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.mailing__submit {
+  padding: 11px 59px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  transition: 0.3s ease;
+  border: 3px solid #000000; 
+  &:hover {
+    background: #FFFFFF;
+    color: #000000;
+    cursor: pointer;
+  }
+}
