@@ -854,13 +854,20 @@ select {
 
 .news__block__image {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  overflow: hidden;
+  position: relative;
+  padding: 0px 0px 80% 0px;
 }
 
 .news__block__image img {
   margin: 0 auto;
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .news__block__text {
